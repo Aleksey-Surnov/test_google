@@ -1,0 +1,6 @@
+/docker-compose.yml
+/Dockerfile
+/gs_my_credentials.json
+/start.py
+/.env
+__pycache__

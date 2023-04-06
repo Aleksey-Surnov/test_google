@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 12px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Номере Заказа</th>
+          <th>Дата</th>
+          <th>Цена USD</th>
+          <th>Цена RUB</th>
+        </tr>
+      </thead>
+      <tbody id="data-table">
+        <!-- Table data will be inserted here -->
+      </tbody>
+    </table>
+
+    <script>
+      function getData() {
+        axios.get('/data')
+          .then(function (response) {
+            // Clear the table
+            document.getElementById('data-table').innerHTML = '';
+
+            // Loop through the data and add it to the table
+            response.data.forEach(function (item) {
+              var tr = document.createElement('tr');
+              tr.innerHTML = `
+                <td>${item.number_table}</td>
+                <td>${item.number_order}</td>
+                <td>${item.date.substr(0, 10)}</td>
+                <td>${item.price_usd}</td>
+                <td>${item.price_rub}</td>
+              `;
+              document.getElementById('data-table').appendChild(tr);
+            });
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+
+      // Call getData every 5 seconds
+      setInterval(getData, 5000);
+
+      // Call getData on page load
+      getData();
+    </script>
+  </body>
+</html>
