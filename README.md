@@ -16,8 +16,7 @@
 8. Дать название листу в таблице с данными googlesheets **data_list**.
 9. Предоставить доступ в таблице googlesheets сервисному аккаунту c правами редактора.
 10.В папке проекта **test_google** создать файл .env заполнив его следующим образом:
-```
-POSTGRES_USER=<имя пользователя postgres>
+```POSTGRES_USER=<имя пользователя postgres>
 POSTGRES_PASSWORD=<пароль postgres>
 POSTGRES_DB=<название базы данных>
 POSTGRES_HOST=<хост базы данных> # например: localhost
