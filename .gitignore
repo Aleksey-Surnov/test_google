@@ -3,5 +3,5 @@
 /gs_my_credentials.json
 /start.py
 /.env
-/.idea
+/.idea/
 __pycache__
