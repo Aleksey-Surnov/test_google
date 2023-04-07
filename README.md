@@ -46,7 +46,7 @@ SPREADSHEET_ID берем из адресной строки в googlesheets.
 -Изменим в таблице на строке _№10_ значение номера заказа на _1111111_
 
 Браузер:
-![изображение](https://user-images.githubusercontent.com/55957778/230506278-1cb65d63-6176-4786-85b6-6f17d6a83417.png)
+![изображение](https://user-images.githubusercontent.com/55957778/230556376-23f60516-bcc4-4def-958c-08f0e9b0004f.png)
 
 Таблица:
 ![изображение](https://user-images.githubusercontent.com/55957778/230506122-77ea21f5-3627-49d0-84b1-143fdc5f9b10.png)
@@ -55,7 +55,7 @@ SPREADSHEET_ID берем из адресной строки в googlesheets.
 -Изменим в таблице на строке №1 значение номера заказа на _1111777_ и стоимость$ на _300_
 
 Браузер:
-![изображение](https://user-images.githubusercontent.com/55957778/230507030-dd38fb75-2047-40c9-962b-c88ffbbfbded.png)
+![изображение](https://user-images.githubusercontent.com/55957778/230556289-9a73ecdd-06bd-4d72-9f7b-a6c2600fe87e.png)
 
 Таблица:
 ![изображение](https://user-images.githubusercontent.com/55957778/230507085-d0f73d9a-e218-4cf3-93c9-8242bdc7c679.png)
