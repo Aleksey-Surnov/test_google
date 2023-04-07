@@ -1,5 +1,9 @@
-# test_google
-# Тестовое задание группы компаний Каналсервис
+## test_google
+## Тестовое задание группы компаний Каналсервис
+
+### Ссылка на таблицу
+
+https://docs.google.com/spreadsheets/d/1me5jEBT6DFXtFjPrtukclQCSaFfL3yBkb6J1DTcHtBU/edit#gid=0
 
 ### Что необходимо на локальной машине:
 1. установленный python 3.8 и выше.
